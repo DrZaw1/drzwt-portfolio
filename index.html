@@ -1,196 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zaw Win Than | Medical Affairs & Healthcare Business Leader</title>
-  <meta name="description" content="Dr. Zaw Win Than — Medical Affairs & Patient Solutions leader. Quality, education, and healthcare strategy across Myanmar and ASEAN." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Zaw Win Than | Healthcare Portfolio</title>
 
-  <style>
-    :root{
-      --ink:#0E1B2E;
-      --text:#1f2a44;
-      --primary:#0066FF;
-      --accent:#00C2A8;
-      --amber:#FFC857;
-      --bg:#F5F7FB;
-      --card:#FFFFFF;
-      --muted:#6b7a99
-    }
+<style>
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f8fb;
+  color: #2b2b2b;
+}
 
-    *{box-sizing:border-box}
-    html,body{
-      margin:0;
-      padding:0;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,Arial,sans-serif;
-      background:var(--bg);
-      color:var(--text)
-    }
+header {
+  background: linear-gradient(135deg, #0056b3, #1aa179);
+  color: white;
+  padding: 3.5rem 1.5rem;
+}
 
-    a{color:var(--primary);text-decoration:none}
-    a:hover{opacity:.9}
+.header-content {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
 
-    .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.header-content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 4px solid white;
+}
 
-    header{
-      background: radial-gradient(1200px 600px at 85% -10%, #2A7BFF 0%, #0043B8 40%, #0E1B2E 100%);
-      color:#fff;
-      padding:64px 0 24px;
-      position:relative;
-      overflow:hidden
-    }
+.header-text h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
 
-    header::after{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:
-        radial-gradient(700px 300px at 0% 100%, rgba(0,194,168,.25), transparent 60%),
-        radial-gradient(600px 350px at 100% 30%, rgba(255,200,87,.17), transparent 60%);
-      pointer-events:none
-    }
+.header-text p {
+  margin-top: 0.6rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
 
-    .hero{
-      display:grid;
-      grid-template-columns:1.2fr .9fr;
-      gap:36px;
-      align-items:center
-    }
+main {
+  max-width: 1000px;
+  margin: -50px auto 3rem;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+}
 
-    .hero h1{
-      font-size:clamp(28px, 4vw, 44px);
-      line-height:1.1;
-      margin:0 0 12px;
-      color:#fff
-    }
+.section {
+  margin-bottom: 3rem;
+}
 
-    .hero p.lead{
-      font-size:clamp(16px, 1.7vw, 20px);
-      color:#E6EEFF;
-      margin:0 0 18px
-    }
+.section h2 {
+  border-left: 5px solid #1aa179;
+  padding-left: 0.8rem;
+  margin-bottom: 1.2rem;
+  color: #0056b3;
+}
 
-    .quick-tags{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 26px}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
 
-    .tag{
-      background:rgba(255,255,255,.16);
-      border:1px solid rgba(255,255,255,.28);
-      color:#fff;
-      padding:8px 12px;
-      border-radius:999px;
-      font-size:14px
-    }
+.card {
+  background: #ffffff;
+  border: 1px solid #e3eef7;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
 
-    .cta{display:flex;flex-wrap:wrap;gap:12px}
+.card h3 {
+  margin-top: 0;
+  color: #0056b3;
+}
 
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      padding:12px 16px;
-      border-radius:10px;
-      border:1px solid rgba(255,255,255,.2);
-      color:#0E1B2E;
-      background:#fff;
-      font-weight:600;
-      box-shadow:0 6px 20px rgba(0,0,0,.12)
-    }
+.badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: #e8f6f2;
+  color: #1aa179;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
 
-    .btn.secondary{
-      background:transparent;
-      color:#fff;
-      border-color:rgba(255,255,255,.5)
-    }
+.cta {
+  background: #f0f7ff;
+  border-left: 6px solid #0056b3;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
 
-    section{padding:56px 0}
+.cta a {
+  color: #0056b3;
+  font-weight: 600;
+  text-decoration: none;
+}
 
-    .section-title{font-size:26px;margin:0 0 8px}
-    .section-sub{color:var(--muted);margin:0 0 24px}
-
-    .cards{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:18px
-    }
-
-    .card{
-      background:var(--card);
-      border:1px solid #e9eef8;
-      border-radius:14px;
-      padding:18px;
-      box-shadow:0 10px 24px rgba(14,27,46,0.08)
-    }
-
-    footer{
-      background:#0E1B2E;
-      color:#cfd6ea;
-      padding:24px 0;
-      text-align:center;
-      font-size:14px
-    }
-
-    @media (max-width: 900px){
-      .hero{grid-template-columns:1fr}
-    }
-  </style>
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <div class="wrap hero">
-    <div>
+  <div class="header-content">
+    <img src="profile.jpg" alt="Dr. Zaw Win Than">
+    <div class="header-text">
       <h1>Dr. Zaw Win Than</h1>
-      <p class="lead">Medical Affairs & Healthcare Business Leader</p>
-
-      <div class="quick-tags">
-        <span class="tag">Medical Affairs</span>
-        <span class="tag">Patient Solutions</span>
-        <span class="tag">Market Access</span>
-        <span class="tag">ASEAN</span>
-      </div>
-
-      <div class="cta">
-        <a class="btn" href="#about">About Me</a>
-        <a class="btn secondary" href="#contact">Contact</a>
-      </div>
+      <p>
+        Healthcare Professional with a focus on clinical excellence, medical communication,
+        and collaborative healthcare delivery.  
+        Open to hospital appointments, institutional partnerships, and health system initiatives.
+      </p>
     </div>
   </div>
 </header>
 
-<section id="about">
-  <div class="wrap">
-    <h2 class="section-title">About</h2>
-    <p class="section-sub">
-      Senior healthcare professional with experience in medical affairs, education,
-      quality systems, and strategic leadership across emerging markets.
-    </p>
-  </div>
-</section>
+<main>
 
-<section>
-  <div class="wrap">
-    <h2 class="section-title">Core Expertise</h2>
+  <div class="section">
+    <h2>Professional Focus</h2>
     <div class="cards">
       <div class="card">
-        <h3>Medical Affairs</h3>
-        <p>Scientific engagement, evidence strategy, and compliance-driven execution.</p>
+        <h3>Clinical Practice & Patient Care</h3>
+        <p>
+          Commitment to evidence-based medicine, patient safety, and multidisciplinary teamwork
+          within hospital environments.
+        </p>
+        <span class="badge">Clinical Excellence</span>
       </div>
+
       <div class="card">
-        <h3>Patient Solutions</h3>
-        <p>Access programs, value-based care, and patient-centric models.</p>
+        <h3>Medical Education & Communication</h3>
+        <p>
+          Experience in training, health education, and translating complex medical information
+          for teams and stakeholders.
+        </p>
+        <span class="badge">Education & Training</span>
       </div>
+
       <div class="card">
-        <h3>Healthcare Strategy</h3>
-        <p>Portfolio planning, stakeholder alignment, and regional execution.</p>
+        <h3>Healthcare Collaboration</h3>
+        <p>
+          Engaged in collaborative projects with healthcare institutions, industry partners,
+          and professional organizations.
+        </p>
+        <span class="badge">Institutional Collaboration</span>
       </div>
     </div>
   </div>
-</section>
 
-<footer id="contact">
-  <div class="wrap">
-    © 2026 Zaw Win Than · All rights reserved
+  <div class="section">
+    <h2>Portfolio & Documentation</h2>
+    <p>
+      Selected healthcare projects, training materials, and professional documentation
+      are available upon request.
+    </p>
   </div>
+
+  <div class="section">
+    <h2>Hospital & Institutional Engagement</h2>
+    <div class="cta">
+      <p>
+        I welcome discussions regarding hospital appointments, advisory roles,
+        clinical collaborations, and healthcare development initiatives.
+      </p>
+      <p>
+        📩 <a href="mailto:your@email.com">Contact for professional engagement</a>
+      </p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2025 Dr. Zaw Win Than | Healthcare Portfolio
 </footer>
 
 </body>
